@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.message {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message.loading {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.user-list h2,
+.user-details h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 0.5rem;
+}
+
+.list {
+  list-style: none;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 0.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.list li {
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.list li:hover {
+  background: #3498db;
+  color: white;
+  transform: translateX(5px);
+}
+
+.details-box {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-height: 200px;
+}
+
+.details-box p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.details-box strong {
+  color: #2c3e50;
+  display: inline-block;
+  width: 70px;
+}
+
+.reload-btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reload-btn:hover {
+  background: #2980b9;
+}
+
+@media (max-width: 700px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

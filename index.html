@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Assignment #9 - API Fetch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>API Fetch & Data Display</h1>
+      <p class="subtitle">Fetch users from JSONPlaceholder</p>
+
+      <!-- Task 5: Search Filter -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by name..."
+          class="search-input"
+        />
+      </div>
+
+      <!-- Task 3 & 4: Loading/Error messages -->
+      <div id="message" class="message"></div>
+
+      <!-- Task 1: User list -->
+      <div class="content">
+        <div class="user-list">
+          <h2>Users</h2>
+          <ul id="userList" class="list"></ul>
+        </div>
+
+        <!-- Task 2: User details -->
+        <div class="user-details">
+          <h2>Details</h2>
+          <div id="details" class="details-box">
+            <p>Click a user to see details</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Task 6: Reload Button -->
+      <button id="reloadBtn" class="btn reload-btn">Reload Data</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
